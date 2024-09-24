@@ -7,8 +7,12 @@ public class GameManager : MonoBehaviour
     {   //Procura na cena o objeto Player e acessa a posição e passa para o player
         FindObjectOfType<Player>().transform.position = point.position;
     }
-    void CarregaCena(string nomeCena)
+    public static void CarregaCena(string nomeCena)
     {
         SceneManager.LoadScene(nomeCena);
+    }
+    public void Sair()
+    {
+        Application.Quit();
     }
 }
