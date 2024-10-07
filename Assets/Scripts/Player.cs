@@ -54,6 +54,7 @@ public class Player : MonoBehaviour
     {   //se ao pressionar a tecla espaço e estiver no chão
         if(Input.GetButtonDown("Jump") && isGround == true && noVento == false)
         {   //adiciona uma força de impulsão
+            gameObject.transform.parent = null; // Para pular e não seguir a plataforma
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             isGround = false; //estou no ar
             //adicionar animação pular
@@ -142,6 +143,16 @@ public class Player : MonoBehaviour
             HP = 0; //vida igual a zero
             Death(); //chama o método perdeu
         }
+        if(collision.gameObject.CompareTag("Plataforma")) //Se está colidindo com a plataforma
+        {
+            gameObject.transform.parent = collision.transform; 
+            //Se colidiu irá pegar o transform e mandará para o player,
+            //O que fará ele seguir
+        }
+        else
+        {
+            gameObject.transform.parent = null;
+        }
     }
     //O OnTriggerStay ele funciona quando o objeto está em constante contato com outro objeto
     //O OnTriggerEnter ele é chamado somente uma vez quando o objeto entra em contato com outro
@@ -158,6 +169,11 @@ public class Player : MonoBehaviour
         if (col.gameObject.layer == 7) //Se colidiu na layer do ventilador
         {
             noVento = false; //Sai do vento
+        }
+        if(col.gameObject.CompareTag("Plataforma"))
+        {
+            //Null significa que não ta atribuindo nada
+            gameObject.transform.parent = null; //Ao sair voltará para o estado padrão
         }
     }
     //Reiniciar o jogo

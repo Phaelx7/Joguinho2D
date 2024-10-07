@@ -10617,6 +10617,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2261261091917874689, guid: 1ede0743ab00ea24f8cbb5271126a55a, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0700798
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261261091917874689, guid: 1ede0743ab00ea24f8cbb5271126a55a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.24687493
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261261091917874689, guid: 1ede0743ab00ea24f8cbb5271126a55a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.350626
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261261091917874689, guid: 1ede0743ab00ea24f8cbb5271126a55a, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.87656254
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ede0743ab00ea24f8cbb5271126a55a, type: 3}
 --- !u!1 &961531185
@@ -13500,7 +13516,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 50
   field of view: 60
   orthographic: 1
   orthographic size: 5
@@ -13527,7 +13543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926877614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 32, y: 1, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13608,11 +13624,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 319687849636158481, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.43
+      value: 30.8
       objectReference: {fileID: 0}
     - target: {fileID: 319687849636158481, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.49
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 319687849636158481, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13658,6 +13674,40 @@ PrefabInstance:
       propertyPath: cenaReferencia
       value: Final
       objectReference: {fileID: 0}
+    - target: {fileID: 319687849636158482, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
+      propertyPath: dialogo.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 319687849636158482, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
+      propertyPath: dialogo.Array.data[0]
+      value: "Que bom ver voc\xEA novamente!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 319687849636158482, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
+      propertyPath: dialogo.Array.data[1]
+      value: "Voc\xEA enfrentou os desafios com coragem. Estou muito impressionado!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 319687849636158482, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
+      propertyPath: dialogo.Array.data[2]
+      value: Foi uma aventura e tanto!
+      objectReference: {fileID: 0}
+    - target: {fileID: 319687849636158482, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
+      propertyPath: dialogo.Array.data[3]
+      value: Vamos preparar um grande banquete e celebrar sua bravura.
+      objectReference: {fileID: 0}
+    - target: {fileID: 319687849636158482, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
+      propertyPath: dialogoFinal.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 319687849636158482, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
+      propertyPath: dialogoFinal.Array.data[0]
+      value: "Que bom ver voc\xEA novamente! Voc\xEA enfrentou os desafios com coragem.
+        Estou muito impressionado!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 319687849636158482, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
+      propertyPath: dialogoFinal.Array.data[1]
+      value: Foi uma aventura e tanto! Vamos preparar um grande banquete e celebrar
+        sua bravura.
+      objectReference: {fileID: 0}
     - target: {fileID: 319687849636158483, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
       propertyPath: m_Size.x
       value: 1.65
@@ -13673,6 +13723,10 @@ PrefabInstance:
     - target: {fileID: 319687849636158483, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
       propertyPath: m_Offset.y
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 319687849636158483, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 319687849636158574, guid: 5e83dd8cc6d0b8b46bbef73175a15d24, type: 3}
       propertyPath: m_Name

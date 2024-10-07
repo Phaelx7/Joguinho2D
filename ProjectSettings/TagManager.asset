@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Serra
   - Enemy
+  - Plataforma
   layers:
   - Default
   - TransparentFX

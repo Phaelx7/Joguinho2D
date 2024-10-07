@@ -211,7 +211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &462047592
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13596,7 +13596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881437758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2, y: -0.5, z: 0}
+  m_LocalPosition: {x: 17.11, y: 0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13616,6 +13616,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cenaReferencia: Tutorial
+  dialogo:
+  - "Ol\xE1 Jogador! Eu preciso da sua ajuda. Existem ma\xE7\xE3s espalhadas pelas
+    fases, mas cuidado! O caminho \xE9 perigoso."
+  - Cada fase possui inimigos e armadilhas que podem acabar te machucando.
+  - "Use suas habilidades para derrotar os inimigos, coletar as ma\xE7as e chegar
+    at\xE9 o altar que lever\xE1 voc\xEA at\xE9 a fase seguinte,"
+  - Boa Sorte!!!
   textoDialogo: {fileID: 1836106342}
   painelTexto: {fileID: 462047591}
 --- !u!61 &1881437763
@@ -13694,7 +13701,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 50
   field of view: 60
   orthographic: 1
   orthographic size: 5
