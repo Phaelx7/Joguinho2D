@@ -16,6 +16,9 @@ public class MovelPlatform : MonoBehaviour
     [SerializeField] private float positionEsq; //Limite esquerda
     [SerializeField] private float positionCima; //Limite em cima
     [SerializeField] private float positionBaixo; //Limite em baixo
+    private SpriteRenderer sprite;
+
+    void Start() { sprite = GetComponent<SpriteRenderer>();}
     void Update()
     {
        if(!plataformaSubindo)
@@ -40,10 +43,12 @@ public class MovelPlatform : MonoBehaviour
         if(direita) //Mover para direita
         {
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            sprite.flipX = false;
         }
         else //Mover para esquerda
         {
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+            sprite.flipX = true;
         }
     }
     void MovimentoVertical()
