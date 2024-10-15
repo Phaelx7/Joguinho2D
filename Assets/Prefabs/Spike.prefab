@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 8398116777021704381}
   m_Layer: 0
   m_Name: Spike
-  m_TagString: Untagged
+  m_TagString: Armadilhas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8398116777021704380
 Transform:
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbf6a4b702a4dc45b98bb82b54bb110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dano: 3

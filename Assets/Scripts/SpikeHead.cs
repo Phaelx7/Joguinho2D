@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikeHead : MonoBehaviour
+public class SpikeHead : DanoInimigo //Script pai
 {
     [Header("Atributos")]
     [SerializeField]private float speed;
@@ -65,11 +63,11 @@ public class SpikeHead : MonoBehaviour
         destino = transform.position; //O destino vira a posição atual
         atacando = false; //Para de atacar
     }
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if(col.CompareTag("Player"))
         {
-            col.GetComponent<Player>().Hit();
+            base.OnTriggerEnter2D(col); //Acessa o script de dano
         }
         //Parar quando colidir com algo
         Parar();

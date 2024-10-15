@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a6553320cee0741a11cb12b4c067d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dano: 1
   vel: 2
   colisorDir: {fileID: 1631168491064069860}
   colisorEsq: {fileID: 1631168490907202967}

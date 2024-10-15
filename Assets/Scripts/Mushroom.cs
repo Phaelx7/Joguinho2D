@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Mushroom : MonoBehaviour
+public class Mushroom : DanoInimigo
 {
     [SerializeField] private float vel;
     [SerializeField] private Transform colisorDir;
@@ -8,10 +8,9 @@ public class Mushroom : MonoBehaviour
     [SerializeField] private Transform cabecaPonto;
     [SerializeField] private BoxCollider2D box2d;
     [SerializeField] private CircleCollider2D circ2d;
-    public LayerMask layer;
+    [SerializeField] private LayerMask layer;
     private Rigidbody2D rb;
     private Animator anim;
-
     private bool parede;
     void Start()
     {
@@ -55,7 +54,7 @@ public class Mushroom : MonoBehaviour
                 Destroy(gameObject, 0.4f); //Destroi o objeto após 1 segundo
             }else
             {
-                col.gameObject.GetComponent<Player>().Hit();
+                base.OnCollisionEnter2D(col); //Acessa o script pai
             }
         }
     }

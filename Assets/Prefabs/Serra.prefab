@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4598843881115406056}
   m_Layer: 0
   m_Name: Serra
-  m_TagString: Serra
+  m_TagString: Armadilhas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82bb219892ff6b24a9ac6d0d360a4029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dano: 4
   speed: 1.25
   tempoMovimento: 3
 --- !u!58 &4598843881115406057

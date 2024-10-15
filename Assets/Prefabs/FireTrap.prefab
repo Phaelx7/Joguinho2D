@@ -16,10 +16,10 @@ GameObject:
   - component: {fileID: 1773327168165368051}
   m_Layer: 9
   m_Name: FireTrap
-  m_TagString: Untagged
+  m_TagString: Armadilhas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1773327168165368055
 Transform:
@@ -172,5 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f9667396c961c4881a2efb15e16db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dano: 1
   tempoAtivacao: 1.5
   duracao: 5

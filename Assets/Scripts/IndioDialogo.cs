@@ -17,27 +17,7 @@ public class IndioDialogo : MonoBehaviour
         {
             Dialogo();
             jaFalou = true;
-            //painelTexto.SetActive(true);
-            //Dialogo
-            /*
-            textoDialogo.text = "Olá Jogador! Eu preciso da sua ajuda. Existem maçãs espalhadas pelas fases, mas cuidado! O caminho é perigoso.";
-            textoDialogo.text = "Cada fase possui inimigos e armadilhas que podem acabar te machucando.";
-            textoDialogo.text = "Use suas habilidades para derrotar os inimigos, coletar as maças e chegar até o altar que leverá você até a fase seguinte,";
-            textoDialogo.text = "Boa Sorte!";
-            */
-            //Esperar um tempo
-            //painelTexto.SetActive(false);
         }
-        /*if(colidiuIndio.CompareTag("Player"))
-        {
-            jaFalou = true;
-            painelTexto.SetActive(true);
-            //Dialogo
-            textoDialogo.text = "Que bom ver você novamente! Você enfrentou os desafios com coragem. Estou muito impressionado!";
-            textoDialogo.text = "Foi uma aventura e tanto! Vamos preparar um grande banquete e celebrar sua bravura.";
-            //Esperar um tempo
-            //painelTexto.SetActive(false);
-        }*/
     }
     public void Dialogo() //metodo de dialogo
     {

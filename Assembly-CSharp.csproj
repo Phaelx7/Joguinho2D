@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Chegada.cs" />
+     <Compile Include="Assets\Scripts\SpikeHead.cs" />
+     <Compile Include="Assets\Scripts\Firetrap.cs" />
      <Compile Include="Assets\Scripts\Trampolim.cs" />
      <Compile Include="Assets\Scripts\FallingPlatform.cs" />
      <Compile Include="Assets\Scripts\Fruits.cs" />
@@ -48,8 +50,9 @@
      <Compile Include="Assets\Scripts\Box.cs" />
      <Compile Include="Assets\Scripts\Serra.cs" />
      <Compile Include="Assets\Scripts\IndioDialogo.cs" />
-     <Compile Include="Assets\Scripts\Firetrap.cs" />
-     <Compile Include="Assets\Scripts\SpikeHead.cs" />
+     <Compile Include="Assets\Scripts\PlantAttack.cs" />
+     <Compile Include="Assets\Scripts\PlantProjectile.cs" />
+     <Compile Include="Assets\Scripts\DanoInimigo.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

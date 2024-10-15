@@ -5,7 +5,6 @@ public class FallingPlatform : MonoBehaviour
     [SerializeField] private float fallingTime;
     private BoxCollider2D box;
     private Joint2D joint;
-
     void Start()
     {
         box = GetComponent<BoxCollider2D>();

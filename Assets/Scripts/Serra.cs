@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Serra : MonoBehaviour
+public class Serra : DanoInimigo //Script pai
 {
     [SerializeField] private float speed;
     [SerializeField] private float tempoMovimento;
@@ -28,5 +28,10 @@ public class Serra : MonoBehaviour
             direita = !direita; //Inverte a direção
             tempo = 0; //Zera o tempo de movimento
         }
+    }
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        base.OnCollisionEnter2D(coll); //Chama o pai
+        //Script de dano
     }
 }

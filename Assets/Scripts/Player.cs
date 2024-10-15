@@ -110,18 +110,18 @@ public class Player : MonoBehaviour
         coletavelText.text = frutas.ToString(); //pega o texto e coloca a quantidade de frutas
     }
     //Tomou hit
-    public void Hit()
+    public void Hit(int dano)
     { 
         if(recovery == false) //tempo de recuperação desativado
         {
-            StartCoroutine(Flick());
+            StartCoroutine(Flick(dano));
         }
     }
     //Corrotina
-    IEnumerator Flick()
+    IEnumerator Flick(int dano)
     {
         recovery = true; //tempo de recuperação
-        HP--; //perde vida
+        HP -= dano; //Vai perder vida
         Death(); //chama o método perdeu
         vidaText.text = HP.ToString(); //mudar o valor no canvas
         //ativar animação de hit
@@ -137,11 +137,6 @@ public class Player : MonoBehaviour
         {
             isGround = true; //estou no chão
             anim.SetBool("jump", false); //desativa pulo
-        }
-        if(collision.gameObject.CompareTag("Serra")) //Se colidiu com a serra
-        {
-            HP = 0; //vida igual a zero
-            Death(); //chama o método perdeu
         }
         if(collision.gameObject.CompareTag("Plataforma")) //Se está colidindo com a plataforma
         {

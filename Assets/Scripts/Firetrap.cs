@@ -2,33 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Firetrap : MonoBehaviour
+public class Firetrap : DanoInimigo
 {
-    [Header("Timers")]
-    [SerializeField] private float tempoAtivacao; //Quanto tempo será ativado apos tocar no player
-    [SerializeField] private float duracao; //A duração que ficara ativa
-    private Animator anim;
-    private SpriteRenderer sprt;
-    private bool acionada; //Quando a armadilha é acionada
-    private bool ativada;//Quando a armadilha está ativa e pode machucar o jogador
-   void Awake()
-   {
-    anim = GetComponent<Animator>();
-    sprt = GetComponent<SpriteRenderer>();
-   }
+  [Header("Timers")]
+  [SerializeField] private float tempoAtivacao; //Quanto tempo será ativado apos tocar no player
+  [SerializeField] private float duracao; //A duração que ficara ativa
+  private Animator anim;
+  private SpriteRenderer sprt;
+  private bool acionada; //Quando a armadilha é acionada
+  private bool ativada;//Quando a armadilha está ativa e pode machucar o jogador
+  void Awake()
+  {
+   anim = GetComponent<Animator>();
+   sprt = GetComponent<SpriteRenderer>();
+  }
   private void OnTriggerEnter2D(Collider2D col)
   {
     if(col.CompareTag("Player"))
     {
-        if(!acionada) //Se a armadilha não foi acionada
-        {
-            //Acionar a armadilha
-            StartCoroutine(AtivarArmadilha());
-        }
-        if(ativada)
-        {
-            col.GetComponent<Player>().Hit(); //Chama a metodo de dano do jogador
-        }
+      if(!acionada) //Se a armadilha não foi acionada
+      {
+        //Acionar a armadilha
+        StartCoroutine(AtivarArmadilha());
+      }
+      if(ativada)
+      {
+        base.OnTriggerEnter2D(col); //Acessa o script pai
+      }
     }
   } 
   private IEnumerator AtivarArmadilha()
